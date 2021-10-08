@@ -1,0 +1,74 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background-color: #262626FF;
+}
+.circle1{
+	display: block;
+	position: absolute;
+	left: 35%;
+	height: 300px;
+	width: 300px;
+	border: 50px solid black;
+	border-radius: 50%;
+}
+.circle2{
+	display: block;
+	position: absolute;
+	left: 45%;
+	height: 300px;
+	width: 300px;
+	border: 50px solid black;
+	border-radius: 50%;
+}
+.box1{
+	display: block;
+	position: absolute;
+	left: 35%;
+	height: 50px;
+	width: 300px;
+	animation: anime 2s linear infinite;
+}
+.box2{
+	display: block;
+	position: absolute;
+	left: 45%;
+	height: 50px;
+	width: 300px;
+	animation: anime 2s linear 0.5s infinite;
+}
+span{
+	display: block;
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+span:nth-child(1){
+	top: 0;
+	left: 0;
+	background: linear-gradient(45deg,coral,yellow);
+	box-shadow: 1px 1px 60px yellow,
+				1px 1px 60px yellow;
+}
+span:nth-child(2){
+	top: 0;
+	right: 0;
+	background: linear-gradient(45deg,limegreen,lime);
+	box-shadow: 1px 1px 60px lime,
+				1px 1px 60px lime;
+}
+@keyframes anime{
+	100%{
+		transform: rotate(360deg);
+		filter: hue-rotate(360deg);
+	}
+}
